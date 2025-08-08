@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Responsiveness Testing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #ffffff;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            padding: 1rem;
+        }
+        .container {
+            display: flex;
+        }
+        .sidebar {
+            width: 30%;
+            background: #f4f4f4;
+            padding: 1rem;
+            overflow-y: auto;
+            height: 100vh;
+            position: sticky;
+            top: 0;
+            border-right: 1px solid #ddd;
+        }
+        .content {
+            width: 70%;
+            padding: 2rem;
+        }
+        .sidebar a {
+            display: block;
+            margin: 10px 0;
+            color: #0077cc;
+            text-decoration: none;
+        }
+        .screenshot-block {
+            margin-bottom: 3rem;
+        }
+        .screenshot-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+        .screenshot-table td {
+            padding: 1rem;
+            text-align: center;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            transition: transform 0.2s;
+        }
+        img:hover {
+            transform: scale(1.1);
+            cursor: zoom-in;
+        }
+    </style>
+</head>
+<body>
+    <h1>Responsiveness Testing</h1>
+    <div class="container">
+        <div class="sidebar">
+<a href="#section-0">homepage (375x812)</a>
+<a href="#section-1">about (375x812)</a>
+<a href="#section-2">Books (375x812)</a>
+        </div>
+        <div class="content">
+
+            <div class="screenshot-block" id="section-0">
+                <table class="screenshot-table">
+                    <tr><td><a href="https://live-icsample1657400753.pantheonsite.io/" target="_blank">https://live-icsample1657400753.pantheonsite.io/</a></td></tr>
+                    <tr><td><img src="screenshots\375x812-home_20250808112706.png" alt="375x812-home_20250808112706.png"></td></tr>
+                </table>
+            </div>
+
+            <div class="screenshot-block" id="section-1">
+                <table class="screenshot-table">
+                    <tr><td><a href="https://live-icsample1657400753.pantheonsite.io/about-us" target="_blank">https://live-icsample1657400753.pantheonsite.io/about-us</a></td></tr>
+                    <tr><td><img src="screenshots\375x812-about-us_20250808112714.png" alt="375x812-about-us_20250808112714.png"></td></tr>
+                </table>
+            </div>
+
+            <div class="screenshot-block" id="section-2">
+                <table class="screenshot-table">
+                    <tr><td><a href="https://live-icsample1657400753.pantheonsite.io/books" target="_blank">https://live-icsample1657400753.pantheonsite.io/books</a></td></tr>
+                    <tr><td><img src="screenshots\375x812-books_20250808112716.png" alt="375x812-books_20250808112716.png"></td></tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
